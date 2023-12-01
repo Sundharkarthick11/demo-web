@@ -1,3 +1,18 @@
-h1{
-    background: red;
+#p1{
+    background-color: red;
+    display: inline;
+}
+p{
+    background-color: blue;
+    display: inline;
+}
+.block1{
+    background-color: red;
+    display:block;
+}
+.block2{
+    background-color: blue;
+    height: 100;
+    width: 100;
+    display:inline-block
 }
