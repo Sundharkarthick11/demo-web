@@ -15,9 +15,17 @@ ul{
 }
 li{
     color: gray;
+    cursor: pointer;
 }
 li:hover{
     color: white;
-    cursor: pointer;
 }
-
+.searchbar{
+    padding: 25px;
+    text-align: center;
+}
+input{
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+}
