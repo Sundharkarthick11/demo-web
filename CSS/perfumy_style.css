@@ -25,7 +25,43 @@ li:hover{
     text-align: center;
 }
 input{
+    font-size: large;
     width: 60%;
     padding: 10px;
     text-align: center;
 }
+.box{
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: 10px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    width: 220px;
+    cursor: pointer;
+}
+img{
+    height: 220px;
+    width: 220px;
+}
+.products{
+    text-align: center;
+}
+.box:hover{
+    background: black;
+    color: white;
+}
+.about{
+    margin-top: 10px;
+    text-align: center;
+}
+.footer{
+    background: black;
+    margin-top: 10px;
+    height: 50px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
