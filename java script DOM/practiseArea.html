@@ -1,0 +1,12 @@
+<label>number: <input id="num" type="number" value="0"></label>
+<button onclick="printFunc()">print</button>
+<p id="result">result</p>
+<script>
+    var n=document.getElementById("num")
+    var p=document.getElementById("result")
+    function printFunc(){
+        var numvalue=Number(n.value)
+        p.textContent=numvalue
+    }
+
+</script>
