@@ -1,3 +1,5 @@
+<!--
+<h4>PRINT THE ENTERD NUMBER ON SCREEN</h4>
 <label>number: <input id="num" type="number" value="0"></label>
 <button onclick="printFunc()">print</button>
 <p id="result">result</p>
@@ -7,6 +9,65 @@
     function printFunc(){
         var numvalue=Number(n.value)
         p.textContent=numvalue
+    }
+</script>
+-->
+
+
+<!--
+<style>
+    div{
+        background-color: black;
+        height: 100px;
+        width: 100px;
+        transition: 4s;
+    }
+    .width{
+        width: 100%;
+    }
+</style>
+<h4>CHANGE TH COLOR PROPERITES OF THE BOX</h4>
+<div id="box"></div>
+<button onclick="change()">Click to change</button>
+
+<script>
+    var box=document.getElementById("box")
+    
+    function change(){
+        box.style.backgroundColor="red"
+        box.setAttribute("class","width")
+    }
+</script>
+-->
+
+
+<!--
+<input id="inputbox" placeholder="enter anything to display">
+<button onclick="update()">click</button>
+<h1 id="h1"></h1>
+<script>
+    var inputbox=document.getElementById("inputbox")
+    var result=document.getElementById("h1")
+
+    function update(){
+        result.textContent=inputbox.value
+    }
+</script> -->
+
+<input id="inputbox" onkeyup="update()" placeholder="enter anything to display">
+<h1 id="h1"></h1>
+<style>
+    #inputbox{
+        padding: 2px;
+    }
+</style>
+
+<script>
+    var inputbox=document.getElementById("inputbox")
+    var result=document.getElementById("h1")
+
+    function update(){
+        result.textContent=inputbox.value
     }
 
 </script>
