@@ -5,3 +5,61 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+.navbar{
+    background-color: rgb(28, 147, 244);
+    margin-top: 0;
+    margin-left: 0;
+    padding: 10px;
+    color: black;
+}
+.container{
+    padding: 10px;
+}
+.book-container{
+    padding: 15px;
+    margin: 10px;
+    border-radius: 25px;
+    width: 25%;
+    background-color:black;
+    color: white;
+    border-color:rgb(28, 147, 244);
+    border-width: 5px;
+    border-style:solid;
+}
+.book-container h2{
+    margin-top: 2px;
+    margin-bottom: 3px;
+    color: rgb(28, 147, 244);
+}
+.book-container p{
+    color: orange;
+}
+.book-container button{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: rgb(28, 147, 244);
+    border-radius: 5px;
+    border: none;
+}
+.add-button{
+    background-color: rgb(28, 147, 244);
+    color: black;
+    border-radius: 100%;
+    border: none;
+    padding: 20px;
+    position: fixed;
+    font-size: 30px;
+    bottom: 30px;
+    right: 50px;
+}
+.popup-overlay{
+    background-color: black;
+    opacity: 70%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
