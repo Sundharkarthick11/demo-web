@@ -52,7 +52,9 @@
     function update(){
         result.textContent=inputbox.value
     }
-</script> -->
+</script>
+
+
 
 <input id="inputbox" onkeyup="update()" placeholder="enter anything to display">
 <h1 id="h1"></h1>
@@ -69,5 +71,56 @@
     function update(){
         result.textContent=inputbox.value
     }
+</script>
+-->
+<!--
+<h1>CLICK ADD BUTTON TO PRINT HELLO</h1>
+<button onclick="addHello()">Add</button>
+<div id="result"></div>
 
+<script>
+    var div=document.getElementById("result")
+
+    function addHello(){
+        var h1=document.createElement("h1")
+        h1.textContent="Hello"
+        div.append(h1)
+    }
+</script>
+-->
+<!--
+<h1>CHANGE THE BUTTON COLOR</h1>
+<button id="button" onclick="change()">click to change color</button>
+
+<script>
+    var B=document.getElementById("button")
+    function change(){
+        B.style.backgroundColor="red"
+    }
+</script>
+
+
+<h1>CLICK NAME TO CHANGE</h1>
+<h1 id="result">Name</h1>
+<button onclick="update(event)">Karthi</button>
+<button onclick="update(event)">Amar</button>
+<button onclick="update(event)">Dhiyan</button>
+
+<script>
+    var h=document.getElementById("result")
+    function update(event){
+        h.textContent=event.target.textContent
+    }
+</script>
+
+-->
+
+<h1 onclick="deleteItem(event)">one</h1>
+<h1 onclick="deleteItem(event)">two</h1>
+<h1 onclick="deleteItem(event)">three</h1>
+
+<script>
+    function deleteItem(event){
+        event.target.remove()
+    }
 </script>

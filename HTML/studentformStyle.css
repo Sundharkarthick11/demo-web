@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+}
+#form{
+    border-width: 2px;
+    border-style: solid;
+    display: inline-table;
+    padding: 5px;
+}
+tr,td{
+    text-align: center;
+    padding: 2px;
+    border-width: 1px;
+    border-style: solid;
+}
+button{
+    display: inline-table;
+    width: 250px;
+}
+
+#form2{
+    
+}

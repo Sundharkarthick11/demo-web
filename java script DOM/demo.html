@@ -1,3 +1,4 @@
+<!--
 <label for="add">
     <input id="num1" type="number" value="0">
     <input id="num2" type="number" value="0">
@@ -19,5 +20,27 @@
     var total=box1value+box2value
         result.textContent=total
     }
+</script>
+-->
+<!--
+//different types of selection
+<h1>selection by tag</h1>
+<h1 id="one">selection by id</h1>
+<h2 class="two">selection by class</h2>
+<script>
+    var byId=document.getElementById("one")
+    var byClass=document.getElementsByClassName("two")
+    console.log(byId.innerHTML)
+</script>
+-->
 
+<h1 class="one">one</h1>
+<h1 class="one">two</h1>
+<h1 class="one">three</h1>
+
+<script>
+    var div=document.querySelectorAll(".one")
+    for (i=0;i<div.length;i+=1){
+        console.log(div[i])
+    }
 </script>
