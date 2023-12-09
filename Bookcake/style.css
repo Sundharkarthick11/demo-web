@@ -47,9 +47,9 @@ body{
     color: black;
     border-radius: 100%;
     border: none;
-    padding: 20px;
+    padding: 15px;
     position: fixed;
-    font-size: 30px;
+    font-size: 40px;
     bottom: 30px;
     right: 50px;
 }
@@ -62,4 +62,65 @@ body{
     top: 0;
     left: 0;
     z-index: 1;
+}
+.popup-window{
+    background-color: rgb(28, 147, 244);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 25%;
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    left: 40%;
+}
+
+.popup-window h2{
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
+.book-name-input{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    width:90%;
+    display: inline-block;
+    border-radius: 10px;
+}
+.book-author-input{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    width: 90%;
+    display: inline-block;
+    border-radius: 10px;
+}
+.book-description{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.add-book{
+    padding: 5px;
+    margin: 5px;
+    width: 20%;
+    display: inline;
+    border-radius: 10px;
+}
+.cancel-popup{
+    padding: 5px;
+    margin: 5px;
+    width: 20%;
+    display: inline;
+    border-radius: 10px;
 }
