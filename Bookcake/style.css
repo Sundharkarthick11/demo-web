@@ -25,6 +25,8 @@ body{
     border-color:rgb(28, 147, 244);
     border-width: 5px;
     border-style:solid;
+    display: inline-block;
+    vertical-align: top;
 }
 .book-container h2{
     margin-top: 2px;
@@ -41,6 +43,7 @@ body{
     background-color: rgb(28, 147, 244);
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 .add-button{
     background-color: rgb(28, 147, 244);
@@ -52,6 +55,7 @@ body{
     font-size: 40px;
     bottom: 30px;
     right: 50px;
+    cursor: pointer;
 }
 .popup-overlay{
     background-color: black;
@@ -62,6 +66,7 @@ body{
     top: 0;
     left: 0;
     z-index: 1;
+    display: none;
 }
 .popup-window{
     background-color: rgb(28, 147, 244);
@@ -74,6 +79,7 @@ body{
     z-index: 2;
     top: 30%;
     left: 40%;
+    display: none;
 }
 
 .popup-window h2{
@@ -82,45 +88,37 @@ body{
     text-align: center;
     display: block;
 }
-.book-name-input{
+.popup-window input{
+    background: transparent;
     font-size: 20px;
-    text-align: center;
-    padding: 5px;
-    margin: 5px;
-    width:90%;
-    display: inline-block;
-    border-radius: 10px;
-}
-.book-author-input{
-    font-size: 20px;
-    text-align: center;
     padding: 5px;
     margin: 5px;
     width: 90%;
-    display: inline-block;
-    border-radius: 10px;
+    border: none;
+    border-bottom: solid black 2px;
+    margin-bottom: 5px;
 }
-.book-description{
+.popup-window textarea{
+    background: transparent;
     font-size: 20px;
-    text-align: center;
     padding: 5px;
     margin: 5px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: inline-block;
-    border-radius: 10px;
+    width: 90%;
+    border: none;
+    border-bottom: solid black 2px;
 }
-.add-book{
+.popup-window button{
+    margin-top: 5px;
     padding: 5px;
     margin: 5px;
     width: 20%;
     display: inline;
     border-radius: 10px;
+    cursor: pointer;
 }
-.cancel-popup{
-    padding: 5px;
-    margin: 5px;
-    width: 20%;
-    display: inline;
-    border-radius: 10px;
+.popup-window input:focus{
+    outline: none;
+}
+.popup-window textarea{
+    outline: none;
 }
