@@ -26,9 +26,13 @@ _addbutton.addEventListener("click", function(event){
     var div=document.createElement("div")
     div.setAttribute("class","book-container")
     div.innerHTML=`<h2>${bookname.value}</h2>
-    <p>${bookauthor.value}</p>
-    <button>${bookdescrip.value}</button>`
+    <h2 style="color: yellowgreen;">${bookauthor.value}</h2>
+    <p>${bookdescrip.value}</p>
+    <button onclick="deletefunc(event)">Delete</button>`
     _container.append(div)
+    bookname.value=""
+    bookauthor.value=""
+    bookdescrip.value=""
     _overlay.style.display="none";
     _window.style.display="none";
 })

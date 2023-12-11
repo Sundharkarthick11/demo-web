@@ -30,20 +30,26 @@ body{
 }
 .book-container h2{
     margin-top: 2px;
+    font-size: 20px;
     margin-bottom: 3px;
     color: rgb(28, 147, 244);
 }
 .book-container p{
     color: orange;
+    font-size: 15px;
 }
 .book-container button{
     margin-top: 10px;
+    font-size: 15px;
     margin-bottom: 5px;
     padding: 5px;
     background-color: rgb(28, 147, 244);
     border-radius: 5px;
     border: none;
     cursor: pointer;
+}
+.book-container button:hover{
+    background-color: white;
 }
 .add-button{
     background-color: rgb(28, 147, 244);
@@ -53,9 +59,13 @@ body{
     padding: 15px;
     position: fixed;
     font-size: 40px;
-    bottom: 30px;
+    bottom: 10px;
     right: 50px;
     cursor: pointer;
+}
+.add-button:hover{
+    background-color: black;
+    color: white;
 }
 .popup-overlay{
     background-color: black;
@@ -90,7 +100,7 @@ body{
 }
 .popup-window input{
     background: transparent;
-    font-size: 20px;
+    font-size: 15px;
     padding: 5px;
     margin: 5px;
     width: 90%;
@@ -100,12 +110,13 @@ body{
 }
 .popup-window textarea{
     background: transparent;
-    font-size: 20px;
+    font-size: 15px;
     padding: 5px;
     margin: 5px;
-    width: 90%;
     border: none;
     border-bottom: solid black 2px;
+    width: 90%;
+    max-width:90%;
 }
 .popup-window button{
     margin-top: 5px;
@@ -115,6 +126,11 @@ body{
     display: inline;
     border-radius: 10px;
     cursor: pointer;
+    border: none;
+}
+.popup-window button:hover{
+    background-color: black;
+    color: white;
 }
 .popup-window input:focus{
     outline: none;
