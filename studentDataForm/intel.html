@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>studentDataForm</title>
+</head>
+<body>
+    <center>
+    <h1>Student data sheet</h1>
+    <form id="stuForm">
+        <label for="nameinpt">Name:</label>
+        <input type="text" placeholder="enter your name" id="nameinpt"><br><br>
+        <label for="rollno">Rollnumber:</label>
+        <input type="text" placeholder="enter your rollno" id="rollno"><br><br>
+        <button class="box" type="button" onclick="clickfunc()">Add</button>
+    </form>
+
+    <div id="table">
+        <h2>Student database</h2>
+        <table id="datatable">
+        <div class="div_row">
+            <div>
+            <tr>
+                <td>Name</td>
+                <td>Rollnumber</td>
+            </tr>
+            </div>
+        </div>
+        </table>
+    </div>
+    </center>
+
+    <script>
+
+        function clickfunc(){
+        var _name=document.getElementById("nameinpt")
+        var _rollno=document.getElementById("rollno")
+        var _row=document.querySelector(".div_row")
+        var div=document.createElement("div")
+        //div.setAttribute("class","div_row")
+        div.innerHTML=`<tr><td>${_name.value}</td><br><td>${_rollno.value}</td></tr>`
+        _row.appendChild(div)
+        _name.value=''
+        _rollno.value=''
+        }
+    </script>
+
+</body>
+</html>

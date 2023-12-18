@@ -45,3 +45,13 @@
     background-color: black;
     color: white;
 }
+
+.para{
+    padding: 5px;
+    margin-top: 10px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    background-color: gray;
+    border-radius: 10px;
+}
