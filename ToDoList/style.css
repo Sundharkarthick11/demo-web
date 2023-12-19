@@ -18,7 +18,7 @@
     margin: 5px;
     margin-bottom: 5px;
 }
-.container input{
+#input-text{
     display: inline-block;
     text-align: center;
     align-items: center;
@@ -31,7 +31,7 @@
     color: white;
     cursor: text;
 }
-.container button{
+.button{
     display: inline-block;
     text-align: center;
     margin-left: 30px;
@@ -41,7 +41,7 @@
     border-radius: 5px;
     cursor: pointer;
 }
-.container button:hover{
+.button:hover{
     background-color: black;
     color: white;
 }
@@ -54,4 +54,24 @@
     text-align: center;
     background-color: gray;
     border-radius: 10px;
+    display: inline-block;
+    width: 80%;
+}
+.deletebutton{
+    font-size: 15px;
+    display: inline;
+    text-align: center;
+    padding: 5px;
+    border: solid;
+    border-radius: 100%;
+    cursor: pointer;
+    left: 50%;
+}
+.deletebutton:hover{
+    background-color: black;
+    color: white;
+}
+.container ol li{
+    color: white;
+    font-size: 20px;
 }
